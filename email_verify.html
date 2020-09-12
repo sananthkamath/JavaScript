@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Email Verification</title>
+	<script type="text/javascript" src="js/email_verify.js"></script>
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend>Email Verification: </legend>
+		<label>E-mail address: <input type="email" name="e1" id="email_addr" required placeholder="abc@xyz.com" value="abc@xyz.com"></label><br><br>
+
+		<label>Re-enter e-mail address: <input type="email" name="e1" id="email_rpt" required  placeholder="abc@xyz.com" onchange="return verify()"></label><br><br>
+
+		<input type="submit" value="Click to Verify!" onclick="return verify()">
+	</fieldset>	
+</form>
+</body>
+</html>

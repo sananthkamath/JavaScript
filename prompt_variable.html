@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prompt - Variable Demo</title>
+</head>
+<body>
+	<p>
+		This a page to give a demonstration on variables and its assignment.
+	</p>
+	<p>
+		Hello!
+	</p>
+	<p>
+		Welcome!
+	</p>
+	<script type="text/javascript">
+		var name = prompt("What is your name? ");
+		document.write(name);
+		document.write("<h1>" + name + "</h1>");
+		document.write(document.baseURI + "<br>");
+		document.write(document.title + "<br>");
+		var date = Date();
+		document.write(date + "<br>");
+		var loc = window.location;
+		document.write(loc + "<br>");
+		var para = document.getElementsByTagName('p');
+		document.write(para + "<br>");
+		document.write(para[0] + "<br>");
+		document.write(para.length + "<br>");
+	</script>
+</body>
+</html>

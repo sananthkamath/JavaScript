@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS - Checkbox Demo</title>
+	<link rel="stylesheet" type="text/css" href="css/checkbox_js.css">
+	<script type="text/javascript" src="js/checkbox_js.js"></script>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Nickname Form: </legend>
+
+			<label for="fname">First Name: </label>
+			<input type="text" name="fname" id="fname" required pattern="[a-zA-Z]+"><br>
+
+			<label for="lname">Last Name: </label>
+			<input type="text" name="lname" id="lname" required pattern="[a-zA-Z]+"><br>
+
+			<label for="nickn">Do you have a nickname?</label>
+			<input type="checkbox" name="nickn" value="yes" id="nickn" onchange="verifyNickname()">
+
+			<div id="nickname">
+				<label for="nname">Nickname: </label>
+				<input type="text" name="fname" id="nname" required pattern="[a-zA-Z]+"><br>
+			</div>
+
+			<br><input type="submit" name="Verify!">
+
+		</fieldset>
+	</form>
+</body>
+</html>

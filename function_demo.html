@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prompt - Variable Demo</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function welcomeMsg(x)
+		{
+			alert(x);
+			var name = prompt("What is your name? ");
+			return name;
+		}
+		var firstName = welcomeMsg("Hello!")
+		document.write("Name: " + firstName);
+	</script>
+</body>
+</html>
